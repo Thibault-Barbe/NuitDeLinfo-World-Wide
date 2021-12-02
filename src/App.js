@@ -10,20 +10,32 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>{t("title-"+culture)}</h1>
-      <button onClick={() => {i18n.changeLanguage("fr");setCulture("fr")}}>fr</button>
-      <button onClick={() => {i18n.changeLanguage("fr");setCulture("ca")}}>fr-ca</button>
-      <button onClick={() => {i18n.changeLanguage("en");setCulture("uk")}}>en-uk</button>
-      <button onClick={() => {i18n.changeLanguage("en");setCulture("usa")}}>en-usa</button>
-      <button onClick={() => {i18n.changeLanguage("en");setCulture("aus")}}>en-aus</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 style={{ padding: '90px' }}>{t("title-" + culture)}</h1>
+        <button class="cybr-btn" onClick={() => { i18n.changeLanguage("fr"); setCulture("fr") }}>
+          Français<span aria-hidden>_</span>
+          <span aria-hidden class="cybr-btn__glitch">Cyber_</span>
+          <span aria-hidden class="cybr-btn__tag">i18n</span>
+        </button>
+        <button class="cybr-btn" onClick={() => { i18n.changeLanguage("fr"); setCulture("ca") }}>
+          Français CA<span aria-hidden>_</span>
+          <span aria-hidden class="cybr-btn__glitch">Cyber_</span>
+          <span aria-hidden class="cybr-btn__tag">i18n</span>
+        </button>
+        <button class="cybr-btn" onClick={() => { i18n.changeLanguage("en"); setCulture("uk") }}>
+          Anglais UK<span aria-hidden>_</span>
+          <span aria-hidden class="cybr-btn__glitch">Cyber_</span>
+          <span aria-hidden class="cybr-btn__tag">i18n</span>
+        </button>
+        <button class="cybr-btn" onClick={() => { i18n.changeLanguage("en"); setCulture("usa") }}>
+          Anglais USA<span aria-hidden>_</span>
+          <span aria-hidden class="cybr-btn__glitch">Cyber_</span>
+          <span aria-hidden class="cybr-btn__tag">i18n</span>
+        </button>
+        <button class="cybr-btn" onClick={() => { i18n.changeLanguage("en"); setCulture("aus") }}>
+          Anglais AUS<span aria-hidden>_</span>
+          <span aria-hidden class="cybr-btn__glitch">Cyber_</span>
+          <span aria-hidden class="cybr-btn__tag">i18n</span>
+        </button>
       </header>
     </div>
   );
