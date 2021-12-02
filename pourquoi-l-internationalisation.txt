@@ -1,0 +1,5 @@
+L'internationalisation a été faites grâce au package react "react-i18next". Le changement de langue/culture
+est utilisable part des boutons. On a conçu un fichier json pour chaque langue que l'on a prit en compte,
+Les différentes cultures sont gérées à l'intérieure même de ce fichier. La phrase de la langue sélectionnée
+est récupérée avec la fonction useTranslation du package react-i18next, il ne nous reste donc plus qu'à
+l'afficher. L'unité monétaire est géré selon les cultures et non les langues.
